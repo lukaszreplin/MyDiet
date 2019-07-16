@@ -1,0 +1,9 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:prism="http://prismlibrary.com/"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="MyDiet.Views.MainWindow"
+        Title="{Binding Title}"
+        Width="784.947" Height="327.417" prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Button Width="110" Height="82" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Content="Składniki" />
+    </Grid>
+</Window>
