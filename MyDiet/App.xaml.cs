@@ -1,4 +1,6 @@
-﻿using MyDiet.Views;
+﻿using MyDiet.Ingredients.ViewModels;
+using MyDiet.Views;
+using MyDiet.Views.Ingredients;
 using Prism.Ioc;
 using Prism.Modularity;
 using System.Windows;
@@ -18,6 +20,7 @@ namespace MyDiet
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<IngredientsWindow, IngredientsWindowViewModel>();
 
         }
     }

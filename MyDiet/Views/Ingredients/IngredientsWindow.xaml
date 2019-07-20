@@ -1,0 +1,15 @@
+﻿<Window x:Class="MyDiet.Views.Ingredients.IngredientsWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:prism="http://prismlibrary.com/" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="{Binding Title}"
+        Width="788" Height="403" prism:ViewModelLocator.AutoWireViewModel="True"
+        Icon="{Binding IconPath}"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <syncfusion:SfDataGrid Width="760" Height="283" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                               AutoGenerateColumns="False"
+                               ItemsSource="{Binding Ingredients}">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn HeaderText="Nazwa" MappingName="Name" />
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </Grid>
+</Window>

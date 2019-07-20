@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿
+using MyDiet.Views.Ingredients;
+using System.Windows;
 
 namespace MyDiet.Views
 {
@@ -10,6 +12,12 @@ namespace MyDiet.Views
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void IngredientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            IngredientsWindow ingredientsWindow = new IngredientsWindow();
+            ingredientsWindow.ShowDialog();
         }
     }
 }
